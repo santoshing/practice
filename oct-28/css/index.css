@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.container {
+  padding: 50px 30px 50px 80px;
+  margin: 0px;
+
+  height: 100%;
+}
+.row {
+  display: inline-block;
+}
+.card {
+  float: left;
+  width: 380px;
+  padding: 10px;
+  height: 100%;
+  display: block;
+  background: white;
+  margin: 5px;
+}
+a.no-underline {
+  text-decoration: none;
+}
+
+a.no-underline:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+.breadcrumb {
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;
+  font-size: 20px;
+}
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.page {
+  display: inline-block;
+  width: 1200px;
+  background: blue;
+}
+
+.box {
+  width: 258px;
+  display: block;
+  float: left;
+  background: red;
+  margin: 10px;
+  padding: 10px;
+  border: 1px dotted green;
+  height: 500px;
+}
