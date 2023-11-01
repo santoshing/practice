@@ -10,6 +10,11 @@ body {
 
   height: 100%;
 }
+
+.img-responsive{
+  width: 100%;
+  height: auto;
+}
 .row {
   display: inline-block;
 }
@@ -19,7 +24,7 @@ body {
   padding: 10px;
   height: 100%;
   display: block;
-  background: white;
+
   margin: 5px;
 }
 a.no-underline {
@@ -49,16 +54,44 @@ h2 {
 .page {
   display: inline-block;
   width: 1200px;
-  background: blue;
+
 }
 
-.box {
-  width: 258px;
-  display: block;
+.content{
+  width: 760px;
+
   float: left;
-  background: red;
-  margin: 10px;
+  margin: 0 10px ;
+
+
+}
+
+.sidebar{
+  width: 358px;
+  background: green;
+  float: left;
+  margin:0 10px;
+
+  border: 1px solid rgba(228, 228, 228, 0.218);
+}
+
+.box{
+  background: white;
+}
+
+.article-details{
   padding: 10px;
-  border: 1px dotted green;
-  height: 500px;
+  margin-bottom: 10px;
+}
+
+.comment{
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.review{
+
+  padding: 10px;
 }
