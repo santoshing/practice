@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+
+<body>
+       <form action="" method="get" onsubmit="return formTest()">
+              <input type="text" id="f_name" name="f_name" placeholder="First name">
+              <hr>
+              <input type="text" id="l_name" name="l_name" placeholder="Last name">
+              <hr>
+              <input type="text" id="age" name="age" placeholder="Your age">
+              <hr>
+              <input type="password" id="pass_1" name="pass_1" placeholder="Type password">
+              <hr>
+              <input type="password" id="pass_2" name="pass_2" placeholder="Retype password">
+              <hr>
+              <button type="submit">Submit</button>
+       </form>
+
+       <script>
+              function formTest() {
+                     let f_name = document.getElementById("f_name").value;
+                     let l_name = document.getElementById("l_name").value;
+                     let age = document.getElementById("age").value;
+                     let pass_1 = document.getElementById("pass_1").value;
+                     let pass_2 = document.getElementById("pass_2").value;
+
+                     if (f_name != '' && l_name != '' && age != '' && pass_1 != '' && pass_2 != '') {
+
+                            if (pass_1 == pass_2) {
+                                   alert('Password Matched');
+                            }
+                            else {
+                                   alert('Password Not Match');
+                                   return false;
+                            }
+                            if (!isNaN(age)) {
+                                   alert('age is a number');
+                            }
+                            else {
+                                   alert("age not a number");
+                                   return false;
+                            }
+                            //alert('Form Submit');
+                            return true;
+                     }
+                     alert("something blank");
+                     return false;
+              }
+       </script>
+
+
+
+</body>
+
+</html>
