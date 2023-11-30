@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+
+<body>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <a class="navbar-brand" href="#">Navbar</a>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link" href="#">Link</a>
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                   </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                   <input class="form-control me-2" type="search" placeholder="Search"
+                                          aria-label="Search">
+                                   <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                     </div>
+              </div>
+       </nav>
+
+       <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                     <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                   <span aria-hidden="true">&laquo;</span>
+                            </a>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="#">1</a></li>
+                     <li class="page-item"><a class="page-link" href="#">2</a></li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                   <span aria-hidden="true">&raquo;</span>
+                            </a>
+                     </li>
+              </ul>
+       </nav>
+
+       <p class="d-inline-flex gap-1">
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                     aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                     aria-controls="multiCollapseExample2">Toggle second element</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                     aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                     elements</button>
+       </p>
+       <div class="row">
+              <div class="col">
+                     <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                   Some placeholder content for the first collapse component of this multi-collapse
+                                   example. This panel is hidden by default but revealed when the user activates the
+                                   relevant trigger.
+                            </div>
+                     </div>
+              </div>
+              <div class="col">
+                     <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                   Some placeholder content for the second collapse component of this multi-collapse
+                                   example. This panel is hidden by default but revealed when the user activates the
+                                   relevant trigger.
+                            </div>
+                     </div>
+              </div>
+       </div>
+</body>
+
+</html>
