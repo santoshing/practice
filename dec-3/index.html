@@ -8,12 +8,20 @@
        <link rel="stylesheet" href="css/bootstrap.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<style>
+       .registration-form {
+              background-color: #f2f2f2;
+              padding: 40px;
+              border-radius: 5px;
+       }
+</style>
 
 <body>
 
 
        <body>
-              <div class="container  my-5 ">
+
+              <div class="container  my-5  ">
                      <div class="row justify-content-center">
                             <div class="col-8 registration-form">
                                    <h2 class="display-4 text-center">Registration From</h2>
@@ -24,9 +32,9 @@
                                    <form>
 
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">First name</label>
+                                                 <label class="col-sm-4 col-form-label">First name</label>
 
-                                                 <div class="col-sm-10">
+                                                 <div class="col-sm-8">
 
 
                                                         <div class="input-group mb-3">
@@ -43,9 +51,9 @@
                                                  </div>
                                           </div>
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">Last name</label>
+                                                 <label class="col-sm-4 col-form-label">Last name</label>
 
-                                                 <div class="col-sm-10">
+                                                 <div class="col-sm-8">
 
 
                                                         <div class="input-group mb-3">
@@ -67,17 +75,17 @@
 
 
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">Department</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label">Department</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
                                                                <button class="btn btn-outline-secondary" type="button">
-                                                                      <i class="fa fa-user"></i></button>
+                                                                      <i class="fa fa-building"></i></button>
                                                                <select class="form-control">
-                                                                      <option>Default select</option>
-                                                                      <option>Default select</option>
-                                                                      <option>Default select</option>
-                                                                      <option>Default select</option>
-                                                                      <option>Default select</option>
+                                                                      <option>Management</option>
+                                                                      <option>Accounting</option>
+                                                                      <option>English</option>
+                                                                      <option>Bangla</option>
+                                                                      <option>Finance</option>
                                                                </select>
                                                         </div>
 
@@ -86,8 +94,8 @@
                                           </div>
 
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">User Name</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label">User Name</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
                                                                <button class="btn btn-outline-secondary" type="button">
                                                                       <i class="fa fa-user"></i></button>
@@ -100,11 +108,11 @@
 
 
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">Password</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label">Password</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
                                                                <button class="btn btn-outline-secondary" type="button">
-                                                                      <i class="fa fa-user"></i></button>
+                                                                      <i class="fa fa-key"></i></button>
 
                                                                <input type="password" class="form-control" value=""
                                                                       placeholder="password">
@@ -113,11 +121,13 @@
                                                  </div>
                                           </div>
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label"> Confirm Password</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label"> Confirm Password</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
                                                                <button class="btn btn-outline-secondary" type="button">
-                                                                      <i class="fa fa-user"></i></button>
+                                                                      <i class="fa fa-key"></i>
+
+                                                               </button>
                                                                <input type="password" class="form-control" value=""
                                                                       placeholder="confirm password">
                                                         </div>
@@ -126,12 +136,12 @@
                                                  </div>
                                           </div>
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label"> E-mail</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label"> E-mail</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
 
                                                                <button class="btn btn-outline-secondary" type="button">
-                                                                      <i class="fa fa-user"></i></button>
+                                                                      <i class="fa-solid fa-envelope"></i></button>
                                                                <input type="E-mail" class="form-control" value=""
                                                                       placeholder="E-mail">
                                                         </div>
@@ -139,12 +149,13 @@
                                                  </div>
                                           </div>
                                           <div class="form-group row">
-                                                 <label class="col-sm-2 col-form-label">Contact No.</label>
-                                                 <div class="col-sm-10">
+                                                 <label class="col-sm-4 col-form-label">Contact No.</label>
+                                                 <div class="col-sm-8">
                                                         <div class="input-group mb-3">
 
                                                                <button class="btn btn-outline-secondary" type="button">
-                                                                      <i class="fa fa-user"></i></button>
+                                                                      <i class="fa-solid fa-phone"></i>
+                                                               </button>
                                                                <input type="number" class="form-control" value=""
                                                                       placeholder="(+880)">
                                                         </div>
