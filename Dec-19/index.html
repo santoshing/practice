@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+
+<body>
+       <div>
+              <button id="delete" onclick="deletenow()"> delete
+              </button>
+
+              <div id="result"></div>
+
+
+              <script>
+                     function deletenow() {
+                            var result = confirm('Are you sure?');
+                            var resultbox = document.getElementById('result');
+                            if (result) {
+                                   resultbox.innerHTML = '';
+                                   resultbox.append('ok');
+                            }
+                            else {
+                                   resultbox.innerHTML = '';
+                                   resultbox.append('cancel');
+                            }
+                     }
+              </script>
+       </div>
+       <br>
+       <br>
+       <div>
+              <button id="Buy" onclick="Buynow ()">Buy</button>
+              <div id="sheet"></div>
+
+              <script>
+                     function Buynow() {
+                            var result = confirm('Are you confirm?');
+                            var resultbox = document.getElementById('sheet');
+                            if (result) {
+                                   resultbox.innerHTML = '';
+                                   resultbox.append('ok');
+                            }
+                            else {
+                                   resultbox.innerHTML = "";
+                                   resultbox.append('cancel');
+                            }
+                     }
+              </script>
+       </div>
+       <br>
+       <br>
+       <div>
+              <button id="show" onclick="shownow ()">show</button>
+              <div id="check"></div>
+              <script>
+                     function shownow() {
+                            var result = confirm('please check mail')
+
+                            resultbox.append('ok')
+
+                     }
+              </script>
+       </div>
+
+
+
+
+</body>
+
+</html>
