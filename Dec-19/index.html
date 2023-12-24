@@ -9,23 +9,28 @@
 
 <body>
        <div>
-              <button id="delete" onclick="deletenow()"> delete
+              <button class=" delete" onclick="deletenow()"> delete
               </button>
 
-              <div id="result"></div>
+              <div id="resultbox">
+
+                     <span class="btn yes"> yes</span>
+                     <span class="btn No">No</span>
+
+              </div>
 
 
               <script>
                      function deletenow() {
                             var result = confirm('Are you sure?');
-                            var resultbox = document.getElementById('result');
+                            var resultbox = document.getElementById('resultbox');
                             if (result) {
                                    resultbox.innerHTML = '';
-                                   resultbox.append('ok');
+                                   resultbox.append('yes');
                             }
                             else {
                                    resultbox.innerHTML = '';
-                                   resultbox.append('cancel');
+                                   resultbox.append('No');
                             }
                      }
               </script>
@@ -41,12 +46,13 @@
                             var result = confirm('Are you confirm?');
                             var resultbox = document.getElementById('sheet');
                             if (result) {
+
                                    resultbox.innerHTML = '';
-                                   resultbox.append('ok');
+                                   resultbox.append('yes');
                             }
                             else {
                                    resultbox.innerHTML = "";
-                                   resultbox.append('cancel');
+                                   resultbox.append('NO');
                             }
                      }
               </script>
