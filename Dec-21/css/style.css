@@ -1,0 +1,9 @@
+.parallax {
+       /*The ima used*/
+       background-image: url('https://placehold.co/1366x768/black/gray?text=Parallax+Image');
+       height: 100%;
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
